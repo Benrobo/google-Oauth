@@ -132,7 +132,7 @@ class Auth {
 
                 const data = await req.json();
 
-                if (!data.error) {
+                if (data.error) {
                     return alert(data.message);
                 }
 
@@ -190,15 +190,9 @@ class Auth {
             localStorage.clear()
             alert(data.message);
 
-            log(data.data)
-            // const {} = data.data;
-            // localStorage.setItem("user_auth", JSON.stringify({}))
-            // localStorage.setItem("authToken", JSON.stringify(idToken))
-
-
-            // const a = document.createElement("a")
-            // a.href = "/index.html"
-            // a.click()
+            const a = document.createElement("a")
+            a.href = "/login.html"
+            a.click()
         } catch (e) {
             log(e.message)
             alert("Something went wrong")
@@ -228,7 +222,7 @@ class Auth {
 
             const data = await req.json();
 
-            if (!data.error) {
+            if (data.error) {
                 return alert(data.message);
             }
 
