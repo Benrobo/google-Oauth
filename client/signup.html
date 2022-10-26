@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Auth</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <h1>Sign up</h1>
+    
+    <button class="signup_google">Sign up with Google</button>
+    <br>
+    <input type="text" placeholder="Username" class="username signup_username">
+    <input type="email" placeholder="Email" class="email signup_email">
+    <input type="password" placeholder="Password" class="password signup_password">
+    <br>
+    <button class="signup_with_email">Sign up</button>
+    <br>
+    <a href="/login.html">Have an account ? login.</a>
+    
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+    <script src="./js/auth.js"></script>
+</body>
+</html>

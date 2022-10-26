@@ -1,0 +1,5 @@
+/node_modules
+
+/api/node_modules
+
+/api/config/service_acct.json
